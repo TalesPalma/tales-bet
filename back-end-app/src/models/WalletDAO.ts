@@ -1,0 +1,13 @@
+export interface WalletDAO {
+  id?: number,
+  user_id: number,
+  balance: number,
+  create_at?: Date,
+  update_at?: Date,
+}
+
+
+// NOSSO DAO TEM QUE TER TODO A INTERACAO COM O BANCO DE DADOS
+// CAMDA DE SERVICO VAI TER AS REGRAS DE NEGOCIO
+// CONTROLLER APENAS A INTERACAO COM A ROUTA
+// ROUTA VAI CHAMAR OS CONTROLERS NA ROUTAS CORRETA E DEVE SER REGISTRADA NO APP
